@@ -1,0 +1,100 @@
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt vé xem phim</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .booking-form {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 12px;
+      width: 350px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .booking-form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .booking-form select,
+    .booking-form input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      background: #334155;
+      color: #fff;
+      font-size: 14px;
+    }
+    .booking-form input::placeholder {
+      color: #94a3b8;
+    }
+    .booking-form button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      background: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .booking-form button:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <form class="booking-form">
+    <h2 style="text-align:center;">🎬 Đặt vé xem phim</h2>
+
+    <label>Chọn phim:</label>
+    <select name="movie" required>
+      <option value="">-- Chọn phim --</option>
+      <option value="movie1">Avengers: Endgame</option>
+      <option value="movie2">Spirited Away</option>
+      <option value="movie3">Inside Out 2</option>
+    </select>
+
+    <label>Suất chiếu:</label>
+    <select name="time" required>
+      <option value="">-- Chọn suất chiếu --</option>
+      <option>10:00 AM</option>
+      <option>1:30 PM</option>
+      <option>4:00 PM</option>
+      <option>7:00 PM</option>
+      <option>9:30 PM</option>
+    </select>
+
+    <label>Ghế:</label>
+    <input type="text" placeholder="VD: A5" required>
+
+    <label>Họ tên:</label>
+    <input type="text" placeholder="Nhập họ tên của bạn" required>
+
+    <label>Email:</label>
+    <input type="email" placeholder="Nhập email" required>
+
+    <label>Số điện thoại:</label>
+    <input type="tel" placeholder="Nhập số điện thoại" required>
+
+    <button type="submit">Đặt vé ngay</button>
+  </form>
+</body>
+</html>
